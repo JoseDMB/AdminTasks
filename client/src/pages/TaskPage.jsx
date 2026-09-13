@@ -9,7 +9,7 @@ function TaskPage(){
     getTasks();
     },[]) 
 
-    if (tasks.length === 0) return (<h1>No tasks</h1>);
+    if (tasks.length === 0) return (<h1 className="text-9xl text-white flex h-[calc(100vh-100px)] items-center justify-center">No tasks</h1>);
    
     return( 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 text-white">

@@ -39,28 +39,30 @@ function TaskFormPage(){
     })
     return(
         <div className="flex h-[calc(100vh-100px)] items-center justify-center">
-            <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
+            <div className="bg-violet-950 max-w-md w-full p-10 rounded-md ">
+                <h1 className = "text-3xl font-bold text-violet-50 my-2">Date Task</h1>
             <form onSubmit={onSubmit}>
-                <label className="text-white" htmlFor="title">Title</label>
                 <input type="text"
                 placeholder = "Title"
                 {...register("title")}
-                className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+                className="w-full bg-black focus:outline-none focus:ring-2
+                 focus:ring-lime-400 focus:border-transparent text-white px-4 py-2 rounded-md my-2 border border-violet-50"
                 autoFocus
                 />
 
-                <label className="text-white" htmlFor="description">Description</label>
                 <textarea 
                     rows="3"
                     placeholder="Description"
                     {...register("description")}
-                    className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+                    className="w-full bg-black focus:outline-none focus:ring-2
+                 focus:ring-lime-400 focus:border-transparent text-white px-4 py-2 rounded-md my-2 border border-violet-50"
                 ></textarea>
 
-                <label className="text-white" htmlFor="date">Date</label>
-                <input type="date"{...register('date')} className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"/>
+                <input type="date"{...register('date')} className="w-full bg-violet-300 text-black px-4 py-2 rounded-md my-2 focus:outline-none focus:ring-2
+                 focus:ring-lime-400 focus:border-transparent border border-black"/>
 
-                <button className="bg-yellow-500 px-3 py-2 rounded-md text-black">Save</button>   
+                <button className="bg-violet-50 px-3 py-2 rounded-md text-black hover:bg-lime-400
+                ">Save</button>   
             </form>
         </div>
         </div>
